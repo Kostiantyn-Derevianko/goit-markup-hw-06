@@ -222,12 +222,13 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
+/* стиль для спрятанной модалки */
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.6);
+  transform: translate(-50%, -50%) scale(0.5);
 }
 .modal {
   position: absolute;
@@ -244,27 +245,26 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.close-btn:hover,
-.close-btn:focus {
-  background-color: var(--accent-color);
-}
 .close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 30px;
-  height: 30px;
-  color: #000000;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
+  width: 30px;
+  height: 30px;
+  color: #000000;
   cursor: pointer;
 
   background-color: var(--white-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
+}
+.close-btn:hover,
+.close-btn:focus {
+  background-color: var(--accent-color);
 }
 .modal-svg {
   fill: currentColor;
@@ -301,7 +301,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-*/
 
 /*-------ЧЕМ ЗАНИМАЕМСЯ------- */
 .activity-list {
