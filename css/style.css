@@ -812,6 +812,11 @@ body {
 .footer-btn {
   padding: 10px 62px 10px 29px;
 }
+.footer-btn:hover,
+.footer-btn:focus {
+  color: var(--title-text-color);
+  background-color: var(--button-accent-color);
+}
 .footer-btn-wrapper {
   position: relative;
   margin-left: 12px;
