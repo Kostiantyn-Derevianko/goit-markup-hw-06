@@ -359,7 +359,7 @@ body {
 .check-link {
   color: var(--accent-color);
 }
-.manual-box {
+.custom-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -372,7 +372,7 @@ body {
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-checkbox:checked + .manual-box {
+.modal-checkbox:checked + .custom-box {
   background-color: var(--accent-color);
   border: none;
 }
